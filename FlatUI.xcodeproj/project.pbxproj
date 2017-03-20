@@ -20,7 +20,7 @@
 		5744298E1E7FBCF60031B3A7 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429801E7FBCF60031B3A7 /* SpinerLayer.swift */; };
 		5744298F1E7FBCF60031B3A7 /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574429811E7FBCF60031B3A7 /* SwiftMessages.framework */; };
 		574429901E7FBCF60031B3A7 /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429821E7FBCF60031B3A7 /* TimerEx.swift */; };
-		574429911E7FBCF60031B3A7 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429831E7FBCF60031B3A7 /* Toast.swift */; };
+		574429911E7FBCF60031B3A7 /* TopPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429831E7FBCF60031B3A7 /* TopPopup.swift */; };
 		574429921E7FBCF60031B3A7 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */; };
 		574429931E7FBCF60031B3A7 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */; };
 		574429941E7FBCF60031B3A7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */; };
@@ -53,7 +53,7 @@
 		574429801E7FBCF60031B3A7 /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
 		574429811E7FBCF60031B3A7 /* SwiftMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftMessages.framework; sourceTree = "<group>"; };
 		574429821E7FBCF60031B3A7 /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
-		574429831E7FBCF60031B3A7 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		574429831E7FBCF60031B3A7 /* TopPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPopup.swift; sourceTree = "<group>"; };
 		574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
 		574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				574429801E7FBCF60031B3A7 /* SpinerLayer.swift */,
 				574429811E7FBCF60031B3A7 /* SwiftMessages.framework */,
 				574429821E7FBCF60031B3A7 /* TimerEx.swift */,
-				574429831E7FBCF60031B3A7 /* Toast.swift */,
+				574429831E7FBCF60031B3A7 /* TopPopup.swift */,
 				574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */,
 				574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */,
 				574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */,
@@ -246,7 +246,7 @@
 			files = (
 				574429941E7FBCF60031B3A7 /* UIViewExtensions.swift in Sources */,
 				574429901E7FBCF60031B3A7 /* TimerEx.swift in Sources */,
-				574429911E7FBCF60031B3A7 /* Toast.swift in Sources */,
+				574429911E7FBCF60031B3A7 /* TopPopup.swift in Sources */,
 				5744298B1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift in Sources */,
 				574429891E7FBCF60031B3A7 /* FadeTransition.swift in Sources */,
 				5744298C1E7FBCF60031B3A7 /* RadioButton.swift in Sources */,

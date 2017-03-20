@@ -7,6 +7,10 @@ public protocol TopPopupable {
 
 public struct TopPopup: TopPopupable {
 
+    public init() {
+        
+    }
+    
     public func show(error description: String) {
        show(error:  "An error has occured", description: description)
     }
