@@ -3,14 +3,16 @@ import Foundation
 @IBDesignable
 public class RadioButton: UIView {
 
+    private var buttonColor: UIColor?
     var color: UIColor? {
         set {
-            self.color = newValue
+            buttonColor = newValue
         }
         get {
-            return self.color ?? tintColor
+            return buttonColor ?? tintColor
         }
     }
+
     let damping = CGFloat(7.0)
     let velocity = CGFloat(16.0)
     let duration = 0.3
