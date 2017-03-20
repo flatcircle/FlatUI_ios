@@ -1,8 +1,8 @@
 import UIKit
 
-public class KeyboardAwareViewController: UIViewController {
+open class KeyboardAwareViewController: UIViewController {
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         makeViewKeyboardAware()
     }
