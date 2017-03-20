@@ -24,8 +24,8 @@ public class FloatingLabel: SkyFloatingLabelTextField {
         super.init(frame: frame)
         delegate = self
     }
-
 }
+
 extension FloatingLabel: UITextFieldDelegate {
 
     open func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -80,7 +80,7 @@ public protocol StateBindableTextField {
 
 extension FloatingLabel : StateBindableTextField {}
 
-extension StateBindableTextField where Self : FloatingLabel {
+public extension StateBindableTextField where Self : FloatingLabel {
 
     public func set(text value: String?, errorMessage error: String? = nil) {
         text = value
