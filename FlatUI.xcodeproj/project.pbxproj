@@ -10,7 +10,6 @@
 		57137D951E7FAF34002124E4 /* FlatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57137D8B1E7FAF34002124E4 /* FlatUI.framework */; };
 		57137D9A1E7FAF34002124E4 /* FlatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57137D991E7FAF34002124E4 /* FlatUITests.swift */; };
 		57137D9C1E7FAF34002124E4 /* FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 57137D8E1E7FAF34002124E4 /* FlatUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		574429871E7FBCF60031B3A7 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574429791E7FBCF60031B3A7 /* CardView.xib */; };
 		574429881E7FBCF60031B3A7 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744297A1E7FBCF60031B3A7 /* CGRectEx.swift */; };
 		574429891E7FBCF60031B3A7 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744297B1E7FBCF60031B3A7 /* FadeTransition.swift */; };
 		5744298A1E7FBCF60031B3A7 /* FloatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */; };
@@ -24,7 +23,6 @@
 		574429921E7FBCF60031B3A7 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */; };
 		574429931E7FBCF60031B3A7 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */; };
 		574429941E7FBCF60031B3A7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */; };
-		57F5F19D1E801332009F58CF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F5F19C1E801332009F58CF /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +42,6 @@
 		57137D941E7FAF34002124E4 /* FlatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57137D991E7FAF34002124E4 /* FlatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatUITests.swift; sourceTree = "<group>"; };
 		57137D9B1E7FAF34002124E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		574429791E7FBCF60031B3A7 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		5744297A1E7FBCF60031B3A7 /* CGRectEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
 		5744297B1E7FBCF60031B3A7 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 		5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingLabel.swift; sourceTree = "<group>"; };
@@ -58,7 +55,6 @@
 		574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
 		574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		57F5F19C1E801332009F58CF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +81,6 @@
 		57137D811E7FAF34002124E4 = {
 			isa = PBXGroup;
 			children = (
-				57F5F19C1E801332009F58CF /* Media.xcassets */,
 				57137D8D1E7FAF34002124E4 /* FlatUI */,
 				57137D981E7FAF34002124E4 /* FlatUITests */,
 				57137D8C1E7FAF34002124E4 /* Products */,
@@ -104,7 +99,6 @@
 		57137D8D1E7FAF34002124E4 /* FlatUI */ = {
 			isa = PBXGroup;
 			children = (
-				574429791E7FBCF60031B3A7 /* CardView.xib */,
 				5744297A1E7FBCF60031B3A7 /* CGRectEx.swift */,
 				5744297B1E7FBCF60031B3A7 /* FadeTransition.swift */,
 				5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */,
@@ -229,8 +223,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57F5F19D1E801332009F58CF /* Media.xcassets in Resources */,
-				574429871E7FBCF60031B3A7 /* CardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
