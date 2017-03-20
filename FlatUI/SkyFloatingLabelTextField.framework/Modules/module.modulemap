@@ -1,0 +1,3 @@
+framework module SkyFloatingLabelTextField {
+    header "SkyFloatingLabelTextField-Swift.h"
+}
