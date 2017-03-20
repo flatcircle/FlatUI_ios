@@ -40,7 +40,7 @@ extension FloatingLabel: UITextFieldDelegate {
         return false
     }
 
-    func update(with text: String?) {
+    public func update(with text: String?) {
 
         guard let text = text else {
             updated?(nil)
