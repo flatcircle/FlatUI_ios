@@ -8,6 +8,7 @@ public typealias TextUpdatedClosure = ((String?) -> Void)?
 public class FloatingLabel: SkyFloatingLabelTextField {
 
     public var updated: TextUpdatedClosure = nil
+    public var finished: TextUpdatedClosure = nil
 
     public var floatingTitleLabel: UILabel = {
         $0.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -40,6 +41,10 @@ extension FloatingLabel: UITextFieldDelegate {
         return false
     }
 
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        finished?(textField.text)
+    }
+    
     public func update(with text: String?) {
 
         guard let text = text else {
