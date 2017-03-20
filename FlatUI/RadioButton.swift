@@ -4,7 +4,7 @@ import Foundation
 public class RadioButton: UIView {
 
     private var buttonColor: UIColor?
-    var color: UIColor? {
+    public var color: UIColor? {
         set {
             buttonColor = newValue
         }
