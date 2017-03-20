@@ -7,7 +7,7 @@ open class KeyboardAwareViewController: UIViewController {
         makeViewKeyboardAware()
     }
 
-    var constraintToAnimateOnKeyboardNotification: (constraint: NSLayoutConstraint, originalValue: CGFloat)? {
+    public var constraintToAnimateOnKeyboardNotification: (constraint: NSLayoutConstraint, originalValue: CGFloat)? {
         return nil
     }
 
