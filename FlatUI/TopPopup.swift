@@ -3,6 +3,7 @@ import SwiftMessages
 public protocol TopPopupable {
     func show(error description: String)
     func show(error: String, description: String)
+    func show(success: String, description: String)
 }
 
 public struct TopPopup: TopPopupable {
@@ -18,15 +19,25 @@ public struct TopPopup: TopPopupable {
     public func show(error: String, description: String) {
 
         let view = defaultView()
+        view.configureTheme(.error)
 
         view.configureContent(title: error, body: description, iconImage:  UIImage(named: "errorIconLight")!.withRenderingMode(.alwaysTemplate))
 
         SwiftMessages.show(config: defaultConfig(), view: view)
     }
+    
+    public func show(success: String, description: String) {
+        let view = defaultView()
+        view.configureTheme(.success)
+        
+        view.configureContent(title: success, body: description, iconImage: UIImage(named: "successIconLight")!.withRenderingMode(.alwaysTemplate))
+        
+        SwiftMessages.show(config: defaultConfig(), view: view)
+        
+    }
 
     private func defaultView() -> MessageView {
         let view = MessageView.viewFromNib(layout: .CardView)
-        view.configureTheme(.error)
         view.configureDropShadow()
         view.iconImageView?.tintColor = .white
         return view
