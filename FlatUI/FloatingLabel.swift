@@ -51,7 +51,7 @@ extension FloatingLabel: UITextFieldDelegate {
     }
 }
 
-extension FloatingLabel {
+public extension FloatingLabel {
 
     public func setTitleLabel(font: UIFont) {
         let titleLabel = floatingTitleLabel
