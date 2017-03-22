@@ -45,6 +45,11 @@ extension FloatingLabel: UITextFieldDelegate {
         finished?(textField.text)
     }
     
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+    
     public func update(with text: String?) {
 
         guard let text = text else {
