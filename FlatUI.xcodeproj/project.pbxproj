@@ -15,14 +15,14 @@
 		5744298A1E7FBCF60031B3A7 /* FloatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */; };
 		5744298B1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744297D1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift */; };
 		5744298C1E7FBCF60031B3A7 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744297E1E7FBCF60031B3A7 /* RadioButton.swift */; };
-		5744298D1E7FBCF60031B3A7 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5744297F1E7FBCF60031B3A7 /* SkyFloatingLabelTextField.framework */; };
 		5744298E1E7FBCF60031B3A7 /* SpinerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429801E7FBCF60031B3A7 /* SpinerLayer.swift */; };
-		5744298F1E7FBCF60031B3A7 /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574429811E7FBCF60031B3A7 /* SwiftMessages.framework */; };
 		574429901E7FBCF60031B3A7 /* TimerEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429821E7FBCF60031B3A7 /* TimerEx.swift */; };
 		574429911E7FBCF60031B3A7 /* TopPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429831E7FBCF60031B3A7 /* TopPopup.swift */; };
 		574429921E7FBCF60031B3A7 /* TransitionSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */; };
 		574429931E7FBCF60031B3A7 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */; };
 		574429941E7FBCF60031B3A7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */; };
+		57695DA21E8A7E4D00277711 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57695DA01E8A7E4D00277711 /* SkyFloatingLabelTextField.framework */; };
+		57695DA31E8A7E4D00277711 /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57695DA11E8A7E4D00277711 /* SwiftMessages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +47,14 @@
 		5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingLabel.swift; sourceTree = "<group>"; };
 		5744297D1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAwareViewController.swift; sourceTree = "<group>"; };
 		5744297E1E7FBCF60031B3A7 /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
-		5744297F1E7FBCF60031B3A7 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SkyFloatingLabelTextField.framework; sourceTree = "<group>"; };
 		574429801E7FBCF60031B3A7 /* SpinerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinerLayer.swift; sourceTree = "<group>"; };
-		574429811E7FBCF60031B3A7 /* SwiftMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftMessages.framework; sourceTree = "<group>"; };
 		574429821E7FBCF60031B3A7 /* TimerEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerEx.swift; sourceTree = "<group>"; };
 		574429831E7FBCF60031B3A7 /* TopPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPopup.swift; sourceTree = "<group>"; };
 		574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionSubmitButton.swift; sourceTree = "<group>"; };
 		574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		57695DA01E8A7E4D00277711 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = SOURCE_ROOT; };
+		57695DA11E8A7E4D00277711 /* SwiftMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMessages.framework; path = Carthage/Build/iOS/SwiftMessages.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5744298F1E7FBCF60031B3A7 /* SwiftMessages.framework in Frameworks */,
-				5744298D1E7FBCF60031B3A7 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				57695DA31E8A7E4D00277711 /* SwiftMessages.framework in Frameworks */,
+				57695DA21E8A7E4D00277711 /* SkyFloatingLabelTextField.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,14 +99,14 @@
 		57137D8D1E7FAF34002124E4 /* FlatUI */ = {
 			isa = PBXGroup;
 			children = (
+				57695DA01E8A7E4D00277711 /* SkyFloatingLabelTextField.framework */,
+				57695DA11E8A7E4D00277711 /* SwiftMessages.framework */,
 				5744297A1E7FBCF60031B3A7 /* CGRectEx.swift */,
 				5744297B1E7FBCF60031B3A7 /* FadeTransition.swift */,
 				5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */,
 				5744297D1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift */,
 				5744297E1E7FBCF60031B3A7 /* RadioButton.swift */,
-				5744297F1E7FBCF60031B3A7 /* SkyFloatingLabelTextField.framework */,
 				574429801E7FBCF60031B3A7 /* SpinerLayer.swift */,
-				574429811E7FBCF60031B3A7 /* SwiftMessages.framework */,
 				574429821E7FBCF60031B3A7 /* TimerEx.swift */,
 				574429831E7FBCF60031B3A7 /* TopPopup.swift */,
 				574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */,
@@ -385,6 +385,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FlatUI",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FlatUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -410,6 +411,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FlatUI",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FlatUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
