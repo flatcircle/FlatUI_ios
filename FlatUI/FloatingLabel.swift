@@ -3,13 +3,14 @@ import Foundation
 import UIKit
 
 public typealias TextUpdatedClosure = ((String?) -> Void)?
+public typealias TextFieldClosure = ((UITextField?) -> Void)?
 
 @IBDesignable
 public class FloatingLabel: SkyFloatingLabelTextField {
 
     public var updated: TextUpdatedClosure = nil
     public var finished: TextUpdatedClosure = nil
-    public var started: TextUpdatedClosure = nil
+    public var started: TextFieldClosure = nil
 
     public var floatingTitleLabel: UILabel = {
         $0.autoresizingMask = [.flexibleWidth, .flexibleHeight]
