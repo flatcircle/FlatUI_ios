@@ -47,7 +47,7 @@ extension FloatingLabel: UITextFieldDelegate {
     }
     
     public func textFieldDidBeginEditing(_ textField: UITextField) {
-        started?(nil)
+        started?(textField)
     }
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
