@@ -9,6 +9,7 @@ public class FloatingLabel: SkyFloatingLabelTextField {
 
     public var updated: TextUpdatedClosure = nil
     public var finished: TextUpdatedClosure = nil
+    public var started: TextUpdatedClosure = nil
 
     public var floatingTitleLabel: UILabel = {
         $0.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -43,6 +44,10 @@ extension FloatingLabel: UITextFieldDelegate {
 
     public func textFieldDidEndEditing(_ textField: UITextField) {
         finished?(textField.text)
+    }
+    
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        started?(nil)
     }
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
