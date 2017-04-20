@@ -2,6 +2,9 @@ import UIKit
 
 open class KeyboardAwareViewController: UIViewController {
 
+    
+    var toolbarPadding:CGFloat = 0
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         makeViewKeyboardAware()
@@ -50,14 +53,14 @@ open class KeyboardAwareViewController: UIViewController {
 
             if let currentResponder = self.view.firstResponderView() {
 
-                let maxYPading: CGFloat = 100
+                let maxYPading: CGFloat = 65
                 let textFieldFrame = view.convert(currentResponder.frame, from: currentResponder.superview)
                 let frameToTest = textFieldFrame.offsetBy(dx: 0, dy: maxYPading)
                 let keyboardFrameOffsetFromBottom  = self.view.frame.height - newFrame.height
 
                 if keyboardFrameOffsetFromBottom < frameToTest.maxY {
 
-                    constraintToAnimateOnKeyboardNotification?.constraint.constant += abs(keyboardFrameOffsetFromBottom - frameToTest.maxY)
+                    constraintToAnimateOnKeyboardNotification?.constraint.constant += abs(keyboardFrameOffsetFromBottom - frameToTest.maxY) + toolbarPadding
 
                     UIView.animate(withDuration: animationDuration, animations: { [unowned self] _ in
                         self.view.layoutIfNeeded()
