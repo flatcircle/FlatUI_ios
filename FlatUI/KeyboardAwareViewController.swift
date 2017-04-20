@@ -50,7 +50,7 @@ open class KeyboardAwareViewController: UIViewController {
 
             if let currentResponder = self.view.firstResponderView() {
 
-                let maxYPading: CGFloat = 65
+                let maxYPading: CGFloat = 100
                 let textFieldFrame = view.convert(currentResponder.frame, from: currentResponder.superview)
                 let frameToTest = textFieldFrame.offsetBy(dx: 0, dy: maxYPading)
                 let keyboardFrameOffsetFromBottom  = self.view.frame.height - newFrame.height
