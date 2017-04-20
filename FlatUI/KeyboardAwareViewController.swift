@@ -3,7 +3,7 @@ import UIKit
 open class KeyboardAwareViewController: UIViewController {
 
     
-    var toolbarPadding:CGFloat = 0
+    public var toolbarPadding:CGFloat = 0
     
     open override func viewDidLoad() {
         super.viewDidLoad()
