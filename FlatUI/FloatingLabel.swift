@@ -55,6 +55,11 @@ extension FloatingLabel: UITextFieldDelegate {
         textField.resignFirstResponder()
         return false
     }
+    func textFieldShouldClear(textField: UITextField) -> Bool {
+        textField.text = ""
+        update(with: "")
+        return false
+    }
     
     public func update(with text: String?) {
 
