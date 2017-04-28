@@ -56,12 +56,6 @@ extension FloatingLabel: UITextFieldDelegate {
         return false
     }
     
-    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        textField.text = ""
-        update(with: "")
-        return false
-    }
-    
     public func update(with text: String?) {
 
         guard let text = text else {
