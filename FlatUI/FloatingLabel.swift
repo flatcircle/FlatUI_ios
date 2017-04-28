@@ -55,7 +55,8 @@ extension FloatingLabel: UITextFieldDelegate {
         textField.resignFirstResponder()
         return false
     }
-    func textFieldShouldClear(textField: UITextField) -> Bool {
+    
+    public func textFieldShouldClear(_ textField: UITextField) -> Bool {
         textField.text = ""
         update(with: "")
         return false
