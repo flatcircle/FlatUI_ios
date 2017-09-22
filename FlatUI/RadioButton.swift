@@ -81,7 +81,7 @@ extension RadioButton {
     }
 
     func startSelectAnimation() {
-        UIView.animate(withDuration: self.duration, delay: 0.0, usingSpringWithDamping: self.damping, initialSpringVelocity: self.velocity, options: UIViewAnimationOptions.allowUserInteraction, animations: { [unowned self] _ in
+        UIView.animate(withDuration: self.duration, delay: 0.0, usingSpringWithDamping: self.damping, initialSpringVelocity: self.velocity, options: UIViewAnimationOptions.allowUserInteraction, animations: { [unowned self] in
             self.centerView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
         }) { _ in
             if self.isSelected {
@@ -93,7 +93,7 @@ extension RadioButton {
     }
 
     func selectedAnimationFinish() {
-        UIView.animate(withDuration: self.duration, delay: 0, usingSpringWithDamping: self.damping, initialSpringVelocity: self.velocity, options: UIViewAnimationOptions.allowUserInteraction, animations: { [unowned self] _ in
+        UIView.animate(withDuration: self.duration, delay: 0, usingSpringWithDamping: self.damping, initialSpringVelocity: self.velocity, options: UIViewAnimationOptions.allowUserInteraction, animations: { [unowned self] in
             self.centerView.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
         }) { _ in
             if !self.isSelected {
@@ -103,7 +103,7 @@ extension RadioButton {
     }
 
     func deselectAnimation() {
-        UIView.animate(withDuration: self.duration, delay: 0, usingSpringWithDamping: self.damping, initialSpringVelocity: self.velocity, options: UIViewAnimationOptions.allowUserInteraction, animations: { [unowned self] _ in
+        UIView.animate(withDuration: self.duration, delay: 0, usingSpringWithDamping: self.damping, initialSpringVelocity: self.velocity, options: UIViewAnimationOptions.allowUserInteraction, animations: { [unowned self] in
             self.centerView.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
             }, completion: nil)
     }

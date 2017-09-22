@@ -37,7 +37,7 @@ public struct TopPopup: TopPopupable {
     }
 
     private func defaultView() -> MessageView {
-        let view = MessageView.viewFromNib(layout: .CardView)
+        let view = MessageView.viewFromNib(layout: .cardView)
         view.configureDropShadow()
         view.iconImageView?.tintColor = .white
         return view

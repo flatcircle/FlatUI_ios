@@ -35,18 +35,18 @@ open class KeyboardAwareViewController: UIViewController {
         view.addGestureRecognizer(viewTap)
     }
     
-    func keyboardWillHide(notification: Notification) {
+    @objc func keyboardWillHide(notification: Notification) {
         if let userInfo = notification.userInfo, let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? Double {
             
             constraintToAnimateOnKeyboardNotification?.constraint.constant = constraintToAnimateOnKeyboardNotification?.originalValue ?? 0
             keyboardIsVisible = false
-            UIView.animate(withDuration: animationDuration, animations: { [unowned self] _ in
+            UIView.animate(withDuration: animationDuration, animations: { [unowned self] in
                 self.view.layoutIfNeeded()
             })
         }
     }
     
-    func keyboardWillShow(notification: Notification) {
+    @objc func keyboardWillShow(notification: Notification) {
         if let userInfo = notification.userInfo,
             let frame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
             let animationDuration = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? Double {
@@ -67,7 +67,7 @@ open class KeyboardAwareViewController: UIViewController {
                         constraintToAnimateOnKeyboardNotification?.constraint.constant += toolbarPadding
                         keyboardIsVisible = true
                     }
-                    UIView.animate(withDuration: animationDuration, animations: { [unowned self] _ in
+                    UIView.animate(withDuration: animationDuration, animations: { [unowned self] in
                         self.view.layoutIfNeeded()
                     })
                 }
