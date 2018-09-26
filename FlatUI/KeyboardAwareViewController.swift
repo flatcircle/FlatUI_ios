@@ -25,8 +25,8 @@ open class KeyboardAwareViewController: UIViewController {
     }
     
     private func addKeyboardListeners() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     private func addTapGestures() {
@@ -36,7 +36,7 @@ open class KeyboardAwareViewController: UIViewController {
     }
     
     @objc func keyboardWillHide(notification: Notification) {
-        if let userInfo = notification.userInfo, let animationDuration = userInfo[UIKeyboardAnimationDurationUserInfoKey] as? Double {
+        if let userInfo = notification.userInfo, let animationDuration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
             
             constraintToAnimateOnKeyboardNotification?.constraint.constant = constraintToAnimateOnKeyboardNotification?.originalValue ?? 0
             keyboardIsVisible = false
@@ -48,8 +48,8 @@ open class KeyboardAwareViewController: UIViewController {
     
     @objc func keyboardWillShow(notification: Notification) {
         if let userInfo = notification.userInfo,
-            let frame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
-            let animationDuration = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? Double {
+            let frame = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue,
+            let animationDuration = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? Double {
             let newFrame = view.convert(frame, from: UIApplication.shared.delegate?.window!)
             
             if let currentResponder = self.view.firstResponderView() {

@@ -46,7 +46,7 @@ public struct TopPopup: TopPopupable {
     private func defaultConfig() -> SwiftMessages.Config {
         var config = SwiftMessages.Config()
         config.presentationStyle = .top
-        config.presentationContext = .window(windowLevel: UIWindowLevelStatusBar)
+        config.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
         config.dimMode = .gray(interactive: true)
         return config
     }
