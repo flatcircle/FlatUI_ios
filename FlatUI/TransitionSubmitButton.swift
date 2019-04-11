@@ -7,8 +7,7 @@ public enum ButtonAnimationState: Int {
     case completed = 2
 }
 
-@IBDesignable
-public class TKTransitionSubmitButton: UIButton, UIViewControllerTransitioningDelegate, CAAnimationDelegate {
+public class TransitionSubmitButton: UIButton, UIViewControllerTransitioningDelegate, CAAnimationDelegate {
 
     lazy var spiner: SpinerLayer! = {
         let s = SpinerLayer(frame: self.frame)
@@ -39,7 +38,8 @@ public class TKTransitionSubmitButton: UIButton, UIViewControllerTransitioningDe
     let shrinkCurve = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
     let expandCurve = CAMediaTimingFunction(controlPoints: 0.95, 0.02, 1, 0.05)
     let shrinkDuration: CFTimeInterval  = 0.1
-    @IBInspectable open var normalCornerRadius: CGFloat? = 0.0 {
+    
+    open var normalCornerRadius: CGFloat? = 0.0 {
         didSet {
             self.layer.cornerRadius = normalCornerRadius!
         }

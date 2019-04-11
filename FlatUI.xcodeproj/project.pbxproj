@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486D63F4901AE6BEDBBC0A26 /* Pods_FlatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E9432A75FA9D9CA7A6A26A /* Pods_FlatUI.framework */; };
 		57137D951E7FAF34002124E4 /* FlatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57137D8B1E7FAF34002124E4 /* FlatUI.framework */; };
 		57137D9A1E7FAF34002124E4 /* FlatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57137D991E7FAF34002124E4 /* FlatUITests.swift */; };
 		57137D9C1E7FAF34002124E4 /* FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 57137D8E1E7FAF34002124E4 /* FlatUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 		574429941E7FBCF60031B3A7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */; };
 		57695DA21E8A7E4D00277711 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57695DA01E8A7E4D00277711 /* SkyFloatingLabelTextField.framework */; };
 		57695DA31E8A7E4D00277711 /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57695DA11E8A7E4D00277711 /* SwiftMessages.framework */; };
+		7AFB52EB7282BE95481BFF66 /* Pods_FlatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C0D07DFF3E2C2BE2998AF /* Pods_FlatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000C0D07DFF3E2C2BE2998AF /* Pods_FlatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E9432A75FA9D9CA7A6A26A /* Pods_FlatUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57137D8B1E7FAF34002124E4 /* FlatUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57137D8E1E7FAF34002124E4 /* FlatUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatUI.h; sourceTree = "<group>"; };
 		57137D8F1E7FAF34002124E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +59,10 @@
 		574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		57695DA01E8A7E4D00277711 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyFloatingLabelTextField.framework; path = Carthage/Build/iOS/SkyFloatingLabelTextField.framework; sourceTree = SOURCE_ROOT; };
 		57695DA11E8A7E4D00277711 /* SwiftMessages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftMessages.framework; path = Carthage/Build/iOS/SwiftMessages.framework; sourceTree = SOURCE_ROOT; };
+		6A6DC11042663BA06EE79562 /* Pods-FlatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatUITests.debug.xcconfig"; path = "Target Support Files/Pods-FlatUITests/Pods-FlatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C087FA47EA286CC9B2B179C7 /* Pods-FlatUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatUI.release.xcconfig"; path = "Target Support Files/Pods-FlatUI/Pods-FlatUI.release.xcconfig"; sourceTree = "<group>"; };
+		E5281DBAD6E89C71D1BC0EEC /* Pods-FlatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatUITests.release.xcconfig"; path = "Target Support Files/Pods-FlatUITests/Pods-FlatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E82EDC584C7648B786AFC8D5 /* Pods-FlatUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatUI.debug.xcconfig"; path = "Target Support Files/Pods-FlatUI/Pods-FlatUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			files = (
 				57695DA31E8A7E4D00277711 /* SwiftMessages.framework in Frameworks */,
 				57695DA21E8A7E4D00277711 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				486D63F4901AE6BEDBBC0A26 /* Pods_FlatUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,18 +81,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				57137D951E7FAF34002124E4 /* FlatUI.framework in Frameworks */,
+				7AFB52EB7282BE95481BFF66 /* Pods_FlatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4741F1A8993AFB7B06E7320D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E82EDC584C7648B786AFC8D5 /* Pods-FlatUI.debug.xcconfig */,
+				C087FA47EA286CC9B2B179C7 /* Pods-FlatUI.release.xcconfig */,
+				6A6DC11042663BA06EE79562 /* Pods-FlatUITests.debug.xcconfig */,
+				E5281DBAD6E89C71D1BC0EEC /* Pods-FlatUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		57137D811E7FAF34002124E4 = {
 			isa = PBXGroup;
 			children = (
 				57137D8D1E7FAF34002124E4 /* FlatUI */,
 				57137D981E7FAF34002124E4 /* FlatUITests */,
 				57137D8C1E7FAF34002124E4 /* Products */,
+				4741F1A8993AFB7B06E7320D /* Pods */,
+				AD71773DB7DF77C0273E54EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +150,15 @@
 			path = FlatUITests;
 			sourceTree = "<group>";
 		};
+		AD71773DB7DF77C0273E54EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E9432A75FA9D9CA7A6A26A /* Pods_FlatUI.framework */,
+				000C0D07DFF3E2C2BE2998AF /* Pods_FlatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -145,6 +177,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57137D9F1E7FAF34002124E4 /* Build configuration list for PBXNativeTarget "FlatUI" */;
 			buildPhases = (
+				9C8A80A80A8EE25B6DC406D5 /* [CP] Check Pods Manifest.lock */,
 				57137D861E7FAF34002124E4 /* Sources */,
 				57137D871E7FAF34002124E4 /* Frameworks */,
 				57137D881E7FAF34002124E4 /* Headers */,
@@ -163,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57137DA21E7FAF34002124E4 /* Build configuration list for PBXNativeTarget "FlatUITests" */;
 			buildPhases = (
+				4343BC9FFCBF53B8ECE84B47 /* [CP] Check Pods Manifest.lock */,
 				57137D901E7FAF34002124E4 /* Sources */,
 				57137D911E7FAF34002124E4 /* Frameworks */,
 				57137D921E7FAF34002124E4 /* Resources */,
@@ -184,19 +218,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Flat Circle";
 				TargetAttributes = {
 					57137D8A1E7FAF34002124E4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 56XX9JASG7;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					57137D931E7FAF34002124E4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 56XX9JASG7;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -206,6 +240,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 57137D811E7FAF34002124E4;
@@ -235,6 +270,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4343BC9FFCBF53B8ECE84B47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8A80A80A8EE25B6DC406D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlatUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57137D861E7FAF34002124E4 /* Sources */ = {
@@ -278,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -339,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -391,6 +475,7 @@
 		};
 		57137DA01E7FAF34002124E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E82EDC584C7648B786AFC8D5 /* Pods-FlatUI.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -402,7 +487,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FlatUI",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FlatUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -412,13 +496,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		57137DA11E7FAF34002124E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C087FA47EA286CC9B2B179C7 /* Pods-FlatUI.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -430,7 +514,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FlatUI",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = FlatUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -439,13 +522,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.flatcircle.FlatUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		57137DA31E7FAF34002124E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6DC11042663BA06EE79562 /* Pods-FlatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 56XX9JASG7;
@@ -453,13 +536,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.flatcircle.FlatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		57137DA41E7FAF34002124E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5281DBAD6E89C71D1BC0EEC /* Pods-FlatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 56XX9JASG7;
@@ -467,8 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.flatcircle.FlatUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

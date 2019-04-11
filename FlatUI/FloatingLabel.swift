@@ -69,7 +69,7 @@ extension FloatingLabel: UITextFieldDelegate {
 
 public extension FloatingLabel {
 
-    public func setTitleLabel(font: UIFont) {
+    func setTitleLabel(font: UIFont) {
         let titleLabel = floatingTitleLabel
         titleLabel.textColor = titleColor
         titleLabel.font = font
@@ -98,7 +98,7 @@ extension FloatingLabel : StateBindableTextField {}
 
 public extension StateBindableTextField where Self : FloatingLabel {
 
-    public func set(text value: String?, errorMessage error: String? = nil) {
+    func set(text value: String?, errorMessage error: String? = nil) {
         text = value
         errorMessage = error
     }

@@ -1,0 +1,22 @@
+PODS:
+  - SkyFloatingLabelTextField (3.6.0)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+
+DEPENDENCIES:
+  - SkyFloatingLabelTextField (~> 3.0)
+  - SwiftMessages
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SkyFloatingLabelTextField
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  SkyFloatingLabelTextField: 38164979b79512f9ff9288ad8acfc4bbf5d843e3
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+
+PODFILE CHECKSUM: 3e7057905ed397bd08e4ffaf9556af3e15785a3c
+
+COCOAPODS: 1.6.1
