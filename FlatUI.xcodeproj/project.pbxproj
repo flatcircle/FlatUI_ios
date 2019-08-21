@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241BC12C230D19AD00285895 /* FCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241BC12B230D19AD00285895 /* FCTextView.swift */; };
+		241BC12E230D1A5800285895 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 241BC12D230D1A5800285895 /* README.md */; };
 		486D63F4901AE6BEDBBC0A26 /* Pods_FlatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E9432A75FA9D9CA7A6A26A /* Pods_FlatUI.framework */; };
 		57137D951E7FAF34002124E4 /* FlatUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57137D8B1E7FAF34002124E4 /* FlatUI.framework */; };
 		57137D9A1E7FAF34002124E4 /* FlatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57137D991E7FAF34002124E4 /* FlatUITests.swift */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		000C0D07DFF3E2C2BE2998AF /* Pods_FlatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241BC12B230D19AD00285895 /* FCTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCTextView.swift; sourceTree = "<group>"; };
+		241BC12D230D1A5800285895 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		42E9432A75FA9D9CA7A6A26A /* Pods_FlatUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57137D8B1E7FAF34002124E4 /* FlatUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlatUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57137D8E1E7FAF34002124E4 /* FlatUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlatUI.h; sourceTree = "<group>"; };
@@ -88,6 +92,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241BC128230D18D300285895 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5744297D1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		241BC129230D18E100285895 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */,
+				5744297A1E7FBCF60031B3A7 /* CGRectEx.swift */,
+				574429821E7FBCF60031B3A7 /* TimerEx.swift */,
+				574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		241BC12A230D18F000285895 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */,
+				5744297E1E7FBCF60031B3A7 /* RadioButton.swift */,
+				574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */,
+				241BC12B230D19AD00285895 /* FCTextView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		4741F1A8993AFB7B06E7320D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +136,7 @@
 		57137D811E7FAF34002124E4 = {
 			isa = PBXGroup;
 			children = (
+				241BC12D230D1A5800285895 /* README.md */,
 				57137D8D1E7FAF34002124E4 /* FlatUI */,
 				57137D981E7FAF34002124E4 /* FlatUITests */,
 				57137D8C1E7FAF34002124E4 /* Products */,
@@ -122,19 +157,14 @@
 		57137D8D1E7FAF34002124E4 /* FlatUI */ = {
 			isa = PBXGroup;
 			children = (
+				241BC12A230D18F000285895 /* Controls */,
+				241BC129230D18E100285895 /* Extensions */,
+				241BC128230D18D300285895 /* Controllers */,
 				57695DA01E8A7E4D00277711 /* SkyFloatingLabelTextField.framework */,
 				57695DA11E8A7E4D00277711 /* SwiftMessages.framework */,
-				5744297A1E7FBCF60031B3A7 /* CGRectEx.swift */,
 				5744297B1E7FBCF60031B3A7 /* FadeTransition.swift */,
-				5744297C1E7FBCF60031B3A7 /* FloatingLabel.swift */,
-				5744297D1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift */,
-				5744297E1E7FBCF60031B3A7 /* RadioButton.swift */,
 				574429801E7FBCF60031B3A7 /* SpinerLayer.swift */,
-				574429821E7FBCF60031B3A7 /* TimerEx.swift */,
 				574429831E7FBCF60031B3A7 /* TopPopup.swift */,
-				574429841E7FBCF60031B3A7 /* TransitionSubmitButton.swift */,
-				574429851E7FBCF60031B3A7 /* UIButtonExtensions.swift */,
-				574429861E7FBCF60031B3A7 /* UIViewExtensions.swift */,
 				57137D8E1E7FAF34002124E4 /* FlatUI.h */,
 				57137D8F1E7FAF34002124E4 /* Info.plist */,
 			);
@@ -259,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241BC12E230D1A5800285895 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +358,7 @@
 				574429901E7FBCF60031B3A7 /* TimerEx.swift in Sources */,
 				574429911E7FBCF60031B3A7 /* TopPopup.swift in Sources */,
 				5744298B1E7FBCF60031B3A7 /* KeyboardAwareViewController.swift in Sources */,
+				241BC12C230D19AD00285895 /* FCTextView.swift in Sources */,
 				574429891E7FBCF60031B3A7 /* FadeTransition.swift in Sources */,
 				5744298C1E7FBCF60031B3A7 /* RadioButton.swift in Sources */,
 				574429931E7FBCF60031B3A7 /* UIButtonExtensions.swift in Sources */,
